@@ -111,7 +111,10 @@ limit 1;
 delimiter //
 create procedure GetTopScoreStudent(in varCourseID varchar(6))
 begin
-	select 
+	select s.StudentID, FullName, CourseID, Score
+    from Student s
+    join enrollment e
+    on s.StudentID = e.StudentID;
 end //
 delimiter ;
 -- b) Gọi thủ tục trên để tìm sinh viên có điểm cao nhất môn "Database Systems" (C00001).
