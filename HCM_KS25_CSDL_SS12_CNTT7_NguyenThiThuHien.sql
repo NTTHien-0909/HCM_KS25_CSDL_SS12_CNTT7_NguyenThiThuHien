@@ -57,9 +57,9 @@ insert into Course value
 
 insert into Enrollment value
 ('S00001', 'C00001', 5.6),
-('S00008', 'C00001', 8.9),
+('S00008', 'C00002', 8.9),
 ('S00004', 'C00001', 10),
-('S00006', 'C00001', 7.5);
+('S00006', 'C00003', 7.5);
 
 -- Câu 1: Tạo View ViewStudentBasic hiển thị: StudentID, FullName, và DeptName. Sau đó viết lệnh truy vấn toàn bộ dữ liệu từ View này.
 create view ViewStudentBasic as
